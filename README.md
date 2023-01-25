@@ -8,7 +8,9 @@ This tool is for educational use only, the author will not be held responsible f
 
 ## **Setup Guide:**
 This code generates a new qTox profile for every unique computer it is ran on.
+
 Then it gets the users friend key and sends a friend request.
+
 The user can then send commands to the qTox profile to control the PC.
 
 **Requirements:**\
